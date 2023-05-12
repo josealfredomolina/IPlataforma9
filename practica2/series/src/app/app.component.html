@@ -1,0 +1,24 @@
+
+
+<h1 class="d-flex justify-content-center text-danger">EDIT CON  BIND Citas de canciones en la serie Strangers Things</h1>
+
+<div class="content" role="main">
+
+  <div>
+    <table>
+      <tr  class="p-3 mb-2 bg-danger  fs-3">
+
+        <th class="border ">Citas de canciones</th>
+        <th class="border">Actor/Actriz de la serie</th>
+      </tr>
+      <tr class="text-black fs-2 bg-danger bg-opacity-50" *ngFor="let item of data">
+        <td class="border">{{ item.quote }}</td>
+        <td class="border">{{ item.author }}</td>
+  
+        
+      </tr>
+    </table>
+
+    
+  </div>
+<router-outlet></router-outlet>
